@@ -15,6 +15,7 @@ import { TranslationProvider } from '../providers/translation/translation';
 import { HistoryPage } from '../pages/history/history';
 
 import { IonicStorageModule } from '@ionic/storage';
+import { HistoryProvider } from '../providers/history/history';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { IonicStorageModule } from '@ionic/storage';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    TranslationProvider
+    TranslationProvider,
+    HistoryProvider
   ]
 })
 export class AppModule {}
